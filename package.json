@@ -1,0 +1,42 @@
+{
+  "name": "product_catalog-backend",
+  "version": "1.0.0",
+  "description": "product catalog server (Node.js Express PostgreSQL)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node ./src/server.ts",
+    "dev": "nodemon ./src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fe-aug23-team5/product_catalog-backend.git"
+  },
+  "author": "Super Pooper Coders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fe-aug23-team5/product_catalog-backend/issues"
+  },
+  "homepage": "https://github.com/fe-aug23-team5/product_catalog-backend#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.35.1",
+    "@types/validator": "^13.11.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "reflect-metadata": "^0.1.13",
+    "sequelize-typescript": "^2.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "nodemon": "^3.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  }
+}
