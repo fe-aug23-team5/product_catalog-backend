@@ -1,0 +1,72 @@
+id,category,phoneId,itemId,name,fullPrice,price,screen,capacity,color,ram,year,image
+1,phones,apple-iphone-7-32gb-black,apple-iphone-7-32gb-black,Apple iPhone 7 32GB Black,400,375,4.7' IPS,32GB,black,2GB,2016,img/phones/apple-iphone-7/black/00.jpg
+2,phones,apple-iphone-7-plus-32gb-black,apple-iphone-7-plus-32gb-black,Apple iPhone 7 Plus 32GB Black,540,500,5.5' IPS,32GB,black,3GB,2016,img/phones/apple-iphone-7-plus/black/00.jpg
+3,phones,apple-iphone-8-64gb-gold,apple-iphone-8-64gb-gold,Apple iPhone 8 64GB Gold,600,550,4.7' IPS,64GB,gold,2GB,2017,img/phones/apple-iphone-8/gold/00.jpg
+4,phones,apple-iphone-11-64gb-black,apple-iphone-11-64gb-black,Apple iPhone 11 64GB Black,932,880,6.1' IPS,64GB,black,4GB,2019,img/phones/apple-iphone-11/black/00.jpg
+5,phones,apple-iphone-11-128gb-yellow,apple-iphone-11-128gb-yellow,Apple iPhone 11 128GB Yellow,1100,1050,6.1' IPS,128GB,yellow,4GB,2019,img/phones/apple-iphone-11/yellow/00.jpg
+6,phones,apple-iphone-11-256gb-green,apple-iphone-11-256gb-green,Apple iPhone 11 256GB Green,1172,1115,6.1' IPS,256GB,green,4GB,2019,img/phones/apple-iphone-11/green/00.jpg
+7,phones,apple-iphone-11-pro-64gb-gold,apple-iphone-11-pro-64gb-gold,Apple iPhone 11 Pro 64GB Gold,1312,1270,5.8' OLED,64GB,gold,4GB,2019,img/phones/apple-iphone-11-pro/gold/00.jpg
+8,phones,apple-iphone-11-pro-256gb-midnightgreen,apple-iphone-11-pro-256gb-midnightgreen,Apple iPhone 11 Pro 256GB Midnight green,1640,1570,5.8' OLED,256GB,midnightgreen,4GB,2019,img/phones/apple-iphone-11-pro/midnightgreen/00.jpg
+9,phones,apple-iphone-11-pro-512gb-silver,apple-iphone-11-pro-512gb-silver,Apple iPhone 11 Pro 512GB Silver,1880,1780,5.8' OLED,512GB,silver,4GB,2019,img/phones/apple-iphone-11-pro/silver/00.jpg
+10,phones,apple-iphone-11-pro-max-64gb-spacegray,apple-iphone-11-pro-max-64gb-spacegray,Apple iPhone 11 Pro Max 64GB Spacegray,1480,1400,6.5' OLED,64GB,spacegray,4GB,2019,img/phones/apple-iphone-11-pro-max/spacegray/00.jpg
+11,phones,apple-iphone-11-pro-max-256gb-gold,apple-iphone-11-pro-max-256gb-gold,Apple iPhone 11 Pro Max 256GB Gold,1776,1680,6.5' OLED,256GB,gold,4GB,2019,img/phones/apple-iphone-11-pro-max/gold/00.jpg
+12,phones,apple-iphone-11-pro-max-512gb-spacegray,apple-iphone-11-pro-max-512gb-spacegray,Apple iPhone 11 Pro Max 512GB Spacegray,2020,1930,6.5' OLED,512GB,spacegray,4GB,2019,img/phones/apple-iphone-11-pro-max/spacegray/00.jpg
+13,phones,apple-iphone-xr-64gb-red,apple-iphone-xr-64gb-red,Apple iPhone XR 64GB Red,712,670,6.1' IPS,64GB,red,3GB,2018,img/phones/apple-iphone-xr/red/00.jpg
+14,phones,apple-iphone-xr-128gb-white,apple-iphone-xr-128gb-white,Apple iPhone XR 128GB White,880,815,6.1' IPS,128GB,white,3GB,2018,img/phones/apple-iphone-xr/white/00.jpg
+15,phones,apple-iphone-xs-64gb-spacegray,apple-iphone-xs-64gb-spacegray,Apple iPhone XS 64GB Spacegray,760,720,5.8' OLED,64GB,spacegray,4GB,2018,img/phones/apple-iphone-xs/spacegray/00.jpg
+16,phones,apple-iphone-xs-max-64gb-gold,apple-iphone-xs-max-64gb-gold,Apple iPhone XS Max 64GB Gold,960,900,6.5' OLED,64GB,gold,4GB,2018,img/phones/apple-iphone-xs-max/gold/00.jpg
+17,phones,apple-iphone-xs-max-256gb-silver,apple-iphone-xs-max-256gb-silver,Apple iPhone XS Max 256GB Silver,1080,1000,6.5' OLED,256GB,silver,4GB,2018,img/phones/apple-iphone-xs-max/silver/00.jpg
+18,phones,apple-iphone-7-32gb-gold,apple-iphone-7-32gb-gold,Apple iPhone 7 32GB Gold,400,375,4.7' IPS,32GB,gold,2GB,2016,img/phones/apple-iphone-7/gold/00.jpg
+19,phones,apple-iphone-7-plus-32gb-silver,apple-iphone-7-plus-32gb-silver,Apple iPhone 7 Plus 32GB Silver,540,500,5.5' IPS,32GB,silver,3GB,2016,img/phones/apple-iphone-7-plus/silver/00.jpg
+20,phones,apple-iphone-8-64gb-spacegray,apple-iphone-8-64gb-spacegray,Apple iPhone 8 64GB Space Gray,600,550,4.7' IPS,64GB,spacegray,2GB,2017,img/phones/apple-iphone-8/spacegray/00.jpg
+21,phones,apple-iphone-11-64gb-green,apple-iphone-11-64gb-green,Apple iPhone 11 64GB Green,932,880,6.1' IPS,64GB,green,4GB,2019,img/phones/apple-iphone-11/green/00.jpg
+22,phones,apple-iphone-11-128gb-purple,apple-iphone-11-128gb-purple,Apple iPhone 11 128GB Purple,1100,1050,6.1' IPS,128GB,purple,4GB,2019,img/phones/apple-iphone-11/purple/00.jpg
+23,phones,apple-iphone-11-256gb-yellow,apple-iphone-11-256gb-yellow,Apple iPhone 11 256GB Yellow,1172,1115,6.1' IPS,256GB,yellow,4GB,2019,img/phones/apple-iphone-11/yellow/00.jpg
+24,phones,apple-iphone-11-pro-256gb-gold,apple-iphone-11-pro-256gb-gold,Apple iPhone 11 Pro 256GB Gold,1640,1570,5.8' OLED,256GB,gold,4GB,2019,img/phones/apple-iphone-11-pro/gold/00.jpg
+25,phones,apple-iphone-11-pro-512gb-spacegray,apple-iphone-11-pro-512gb-spacegray,Apple iPhone 11 Pro 512GB Spacegray,1880,1780,5.8' OLED,512GB,spacegray,4GB,2019,img/phones/apple-iphone-11-pro/spacegray/00.jpg
+26,phones,apple-iphone-11-pro-max-64gb-silver,apple-iphone-11-pro-max-64gb-silver,Apple iPhone 11 Pro Max 64GB Silver,1480,1400,6.5' OLED,64GB,silver,4GB,2019,img/phones/apple-iphone-11-pro-max/silver/00.jpg
+27,phones,apple-iphone-11-pro-max-256gb-midnightgreen,apple-iphone-11-pro-max-256gb-midnightgreen,Apple iPhone 11 Pro Max 256GB Midnightgreen,1776,1680,6.5' OLED,256GB,midnightgreen,4GB,2019,img/phones/apple-iphone-11-pro-max/midnightgreen/00.jpg
+28,phones,apple-iphone-11-pro-max-512gb-silver,apple-iphone-11-pro-max-512gb-silver,Apple iPhone 11 Pro Max 512GB Silver,2020,1930,6.5' OLED,512GB,silver,4GB,2019,img/phones/apple-iphone-11-pro-max/silver/00.jpg
+29,phones,apple-iphone-xr-64gb-white,apple-iphone-xr-64gb-white,Apple iPhone XR 64GB White,712,670,6.1' IPS,64GB,white,3GB,2018,img/phones/apple-iphone-xr/white/00.jpg
+30,phones,apple-iphone-xr-128gb-coral,apple-iphone-xr-128gb-coral,Apple iPhone XR 128GB Coral,880,815,6.1' IPS,128GB,coral,3GB,2018,img/phones/apple-iphone-xr/coral/00.jpg
+31,phones,apple-iphone-xs-64gb-gold,apple-iphone-xs-64gb-gold,Apple iPhone XS 64GB Gold,760,720,5.8' OLED,64GB,gold,4GB,2018,img/phones/apple-iphone-xs/gold/00.jpg
+32,phones,apple-iphone-xs-256gb-spacegray,apple-iphone-xs-256gb-spacegray,Apple iPhone XS 256GB Spacegray,960,900,5.8' OLED,256GB,spacegray,4GB,2018,img/phones/apple-iphone-xs/spacegray/00.jpg
+33,phones,apple-iphone-xs-max-64gb-silver,apple-iphone-xs-max-64gb-silver,Apple iPhone XS Max 64GB Silver,960,900,6.5' OLED,64GB,silver,4GB,2018,img/phones/apple-iphone-xs-max/silver/00.jpg
+34,phones,apple-iphone-xs-max-256gb-gold,apple-iphone-xs-max-256gb-gold,Apple iPhone XS Max 256GB Gold,1080,1000,6.5' OLED,256GB,gold,4GB,2018,img/phones/apple-iphone-xs-max/gold/00.jpg
+35,phones,apple-iphone-7-32gb-rosegold,apple-iphone-7-32gb-rosegold,Apple iPhone 7 32GB Rosegold,400,375,4.7' IPS,32GB,rosegold,2GB,2016,img/phones/apple-iphone-7/rosegold/00.jpg
+36,phones,apple-iphone-11-64gb-purple,apple-iphone-11-64gb-purple,Apple iPhone 11 64GB Purple,932,880,6.1' IPS,64GB,purple,4GB,2019,img/phones/apple-iphone-11/purple/00.jpg
+37,phones,apple-iphone-11-64gb-red,apple-iphone-11-64gb-red,Apple iPhone 11 64GB Red,932,880,6.1' IPS,64GB,red,4GB,2019,img/phones/apple-iphone-11/red/00.jpg
+38,phones,apple-iphone-11-128gb-black,apple-iphone-11-128gb-black,Apple iPhone 11 128GB Black,1100,1050,6.1' IPS,128GB,black,4GB,2019,img/phones/apple-iphone-11/black/00.jpg
+39,phones,apple-iphone-11-256gb-red,apple-iphone-11-256gb-red,Apple iPhone 11 256GB Red,1172,1115,6.1' IPS,256GB,red,4GB,2019,img/phones/apple-iphone-11/red/00.jpg
+40,phones,apple-iphone-11-pro-64gb-midnightgreen,apple-iphone-11-pro-64gb-midnightgreen,Apple iPhone 11 Pro 64GB Midnight green,1312,1270,5.8' OLED,64GB,midnightgreen,4GB,2019,img/phones/apple-iphone-11-pro/midnightgreen/00.jpg
+41,phones,apple-iphone-11-pro-256gb-silver,apple-iphone-11-pro-256gb-silver,Apple iPhone 11 Pro 256GB Silver,1640,1570,5.8' OLED,256GB,silver,4GB,2019,img/phones/apple-iphone-11-pro/silver/00.jpg
+42,phones,apple-iphone-11-pro-512gb-gold,apple-iphone-11-pro-512gb-gold,Apple iPhone 11 Pro 512GB Gold,1880,1780,5.8' OLED,512GB,gold,4GB,2019,img/phones/apple-iphone-11-pro/gold/00.jpg
+43,phones,apple-iphone-11-pro-max-64gb-midnightgreen,apple-iphone-11-pro-max-64gb-midnightgreen,Apple iPhone 11 Pro Max 64GB Midnightgreen,1480,1400,6.5' OLED,64GB,midnightgreen,4GB,2019,img/phones/apple-iphone-11-pro-max/midnightgreen/00.jpg
+44,phones,apple-iphone-11-pro-max-256gb-spacegray,apple-iphone-11-pro-max-256gb-spacegray,Apple iPhone 11 Pro Max 256GB Spacegray,1776,1680,6.5' OLED,256GB,spacegray,4GB,2019,img/phones/apple-iphone-11-pro-max/spacegray/00.jpg
+45,phones,apple-iphone-xr-64gb-coral,apple-iphone-xr-64gb-coral,Apple iPhone XR 64GB Coral,712,670,6.1' IPS,64GB,coral,3GB,2018,img/phones/apple-iphone-xr/coral/00.jpg
+46,phones,apple-iphone-xr-128gb-red,apple-iphone-xr-128gb-red,Apple iPhone XR 128GB Red,880,815,6.1' IPS,128GB,red,3GB,2018,img/phones/apple-iphone-xr/red/00.jpg
+47,phones,apple-iphone-xs-256gb-gold,apple-iphone-xs-256gb-gold,Apple iPhone XS 256GB Gold,960,900,5.8' OLED,256GB,gold,4GB,2018,img/phones/apple-iphone-xs/gold/00.jpg
+48,phones,apple-iphone-xs-max-64gb-spacegray,apple-iphone-xs-max-64gb-spacegray,Apple iPhone XS Max 64GB Spacegray,960,900,6.5' OLED,64GB,spacegray,4GB,2018,img/phones/apple-iphone-xs-max/spacegray/00.jpg
+49,phones,apple-iphone-7-plus-32gb-rosegold,apple-iphone-7-plus-32gb-rosegold,Apple iPhone 7 Plus 32GB Rosegold,540,500,5.5' IPS,32GB,rosegold,3GB,2016,img/phones/apple-iphone-7-plus/rosegold/00.jpg
+50,phones,apple-iphone-11-64gb-white,apple-iphone-11-64gb-white,Apple iPhone 11 64GB White,932,880,6.1' IPS,64GB,white,4GB,2019,img/phones/apple-iphone-11/white/00.jpg
+51,phones,apple-iphone-11-128gb-green,apple-iphone-11-128gb-green,Apple iPhone 11 128GB Green,1100,1050,6.1' IPS,128GB,green,4GB,2019,img/phones/apple-iphone-11/green/00.jpg
+52,phones,apple-iphone-11-128gb-white,apple-iphone-11-128gb-white,Apple iPhone 11 128GB White,1100,1050,6.1' IPS,128GB,white,4GB,2019,img/phones/apple-iphone-11/white/00.jpg
+53,phones,apple-iphone-11-256gb-black,apple-iphone-11-256gb-black,Apple iPhone 11 256GB Black,1172,1115,6.1' IPS,256GB,black,4GB,2019,img/phones/apple-iphone-11/black/00.jpg
+54,phones,apple-iphone-11-256gb-white,apple-iphone-11-256gb-white,Apple iPhone 11 256GB White,1172,1115,6.1' IPS,256GB,white,4GB,2019,img/phones/apple-iphone-11/white/00.jpg
+55,phones,apple-iphone-11-pro-64gb-spacegray,apple-iphone-11-pro-64gb-spacegray,Apple iPhone 11 Pro 64GB Spacegray,1312,1270,5.8' OLED,64GB,spacegray,4GB,2019,img/phones/apple-iphone-11-pro/spacegray/00.jpg
+56,phones,apple-iphone-11-pro-512gb-midnightgreen,apple-iphone-11-pro-512gb-midnightgreen,Apple iPhone 11 Pro 512GB Midnight green,1880,1780,5.8' OLED,512GB,midnightgreen,4GB,2019,img/phones/apple-iphone-11-pro/midnightgreen/00.jpg
+57,phones,apple-iphone-11-pro-max-64gb-gold,apple-iphone-11-pro-max-64gb-gold,Apple iPhone 11 Pro Max 64GB Gold,1480,1400,6.5' OLED,64GB,gold,4GB,2019,img/phones/apple-iphone-11-pro-max/gold/00.jpg
+58,phones,apple-iphone-11-pro-max-256gb-silver,apple-iphone-11-pro-max-256gb-silver,Apple iPhone 11 Pro Max 256GB Silver,1776,1680,6.5' OLED,256GB,silver,4GB,2019,img/phones/apple-iphone-11-pro-max/silver/00.jpg
+59,phones,apple-iphone-11-pro-max-512gb-midnightgreen,apple-iphone-11-pro-max-512gb-midnightgreen,Apple iPhone 11 Pro Max 512GB Midnightgreen,2020,1930,6.5' OLED,512GB,midnightgreen,4GB,2019,img/phones/apple-iphone-11-pro-max/midnightgreen/00.jpg
+60,phones,apple-iphone-xr-128gb-yellow,apple-iphone-xr-128gb-yellow,Apple iPhone XR 128GB Yellow,880,815,6.1' IPS,128GB,yellow,3GB,2018,img/phones/apple-iphone-xr/yellow/00.jpg
+61,phones,apple-iphone-7-32gb-silver,apple-iphone-7-32gb-silver,Apple iPhone 7 32GB Silver,400,375,4.7' IPS,32GB,silver,2GB,2016,img/phones/apple-iphone-7/silver/00.jpg
+62,phones,apple-iphone-11-256gb-purple,apple-iphone-11-256gb-purple,Apple iPhone 11 256GB Purple,1172,1115,6.1' IPS,256GB,purple,4GB,2019,img/phones/apple-iphone-11/purple/00.jpg
+63,phones,apple-iphone-11-pro-max-512gb-gold,apple-iphone-11-pro-max-512gb-gold,Apple iPhone 11 Pro Max 512GB Gold,2020,1930,6.5' OLED,512GB,gold,4GB,2019,img/phones/apple-iphone-11-pro-max/gold/00.jpg
+64,phones,apple-iphone-11-64gb-yellow,apple-iphone-11-64gb-yellow,Apple iPhone 11 64GB Yellow,932,880,6.1' IPS,64GB,yellow,4GB,2019,img/phones/apple-iphone-11/yellow/00.jpg
+65,phones,apple-iphone-11-pro-256gb-spacegray,apple-iphone-11-pro-256gb-spacegray,Apple iPhone 11 Pro 256GB Spacegray,1640,1570,5.8' OLED,256GB,spacegray,4GB,2019,img/phones/apple-iphone-11-pro/spacegray/00.jpg
+66,phones,apple-iphone-8-64gb-silver,apple-iphone-8-64gb-silver,Apple iPhone 8 64GB Silver,600,550,4.7' IPS,64GB,silver,2GB,2017,img/phones/apple-iphone-8/silver/00.jpg
+67,phones,apple-iphone-11-128gb-red,apple-iphone-11-128gb-red,Apple iPhone 11 128GB Red,1100,1050,6.1' IPS,128GB,red,4GB,2019,img/phones/apple-iphone-11/red/00.jpg
+68,phones,apple-iphone-xs-max-256gb-spacegray,apple-iphone-xs-max-256gb-spacegray,Apple iPhone XS Max 256GB Spacegray,1080,1000,6.5' OLED,256GB,spacegray,4GB,2018,img/phones/apple-iphone-xs-max/spacegray/00.jpg
+69,phones,apple-iphone-7-plus-32gb-gold,apple-iphone-7-plus-32gb-gold,Apple iPhone 7 Plus 32GB Gold,540,500,5.5' IPS,32GB,gold,3GB,2016,img/phones/apple-iphone-7-plus/gold/00.jpg
+70,phones,apple-iphone-11-pro-64gb-silver,apple-iphone-11-pro-64gb-silver,Apple iPhone 11 Pro 64GB Silver,1312,1270,5.8' OLED,64GB,silver,4GB,2019,img/phones/apple-iphone-11-pro/silver/00.jpg
+71,phones,apple-iphone-xr-64gb-yellow,apple-iphone-xr-64gb-yellow,Apple iPhone XR 64GB Yellow,712,670,6.1' IPS,64GB,yellow,3GB,2018,img/phones/apple-iphone-xr/yellow/00.jpg
