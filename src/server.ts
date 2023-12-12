@@ -13,6 +13,8 @@ const app = express()
 .use(express.json())
 .use(cors({ origin: process.env.CLIENT_ORIGIN }));
 
+app.options('*', cors())
+
 app.use('/phones', phoneRouter);
 
 app.listen(process.env.PORT, () => {
