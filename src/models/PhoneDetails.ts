@@ -4,8 +4,9 @@ import {
   Model,
   PrimaryKey,
   DataType,
-  AllowNull,
+  AllowNull
 } from 'sequelize-typescript';
+
 import { PhoneDetailsType } from '../types/PhoneDetailsType';
 
 @Table({
