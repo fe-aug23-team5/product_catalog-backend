@@ -9,9 +9,15 @@ import { connect } from './utils/initDb';
 dotenv.config();
 connect();
 
+/* const app = express()
+.use(express.json())
+.use(cors({ origin: process.env.CLIENT_ORIGIN })); */ // THIS tTO ENABLE CORS FOR FRONTEND ONLY
+
 const app = express()
 .use(express.json())
-.use(cors({ origin: process.env.CLIENT_ORIGIN }));
+.use(cors());
+
+app.options('*', cors())
 
 app.use('/phones', phoneRouter);
 
