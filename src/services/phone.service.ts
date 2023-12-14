@@ -12,38 +12,39 @@ interface PhonesQueryParams {
   sortBy?: SortByType;
   page?: number;
   perPage?: number | 'all';
+  order?:"ASC"|"DESC";
 }
 
 export const findAll = async (queryParams: PhonesQueryParams) => {
-  const { sortBy, page = 1, perPage = DEFAULT_PER_PAGE } = queryParams;
+  const { sortBy, page = 1, perPage = DEFAULT_PER_PAGE, order = 'ASC' } = queryParams;
 
   switch (sortBy) {
     case 'name':
       return Phone.findAndCountAll({
         offset: page * Number(perPage),
         limit: Number(perPage),
-        order: [['name', 'ASC']],
+        order: [['name', order]],
       });
 
     case 'newest':
       return Phone.findAndCountAll({
         offset: page * Number(perPage),
         limit: Number(perPage),
-        order: [['year', 'DESC']],
+        order: [['year', order==='ASC'?'DESC':'ASC']],
       });
 
     case 'cheapest':
       return Phone.findAndCountAll({
         offset: page * Number(perPage),
         limit: Number(perPage),
-        order: [['price', 'ASC']],
+        order: [['price', order]],
       });
 
     default:
       return Phone.findAndCountAll({
         offset: page * Number(perPage),
         limit: Number(perPage),
-        order: [['name', 'ASC']],
+        order: [['name', order]],
       });
   }
 };

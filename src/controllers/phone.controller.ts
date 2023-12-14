@@ -1,11 +1,10 @@
 import { ControllerAction } from '../types/ControllerAction';
-import express from 'express';
 import * as phoneService from '../services/phone.service';
 
 
 export const getAll: ControllerAction = async (req, res) => {
-  const phones = await phoneService.findAll(req.query);
-  res.send(phones);
+  const {count:totalCount, rows:data} = await phoneService.findAll(req.query);
+  res.send({totalCount, data});
 };
 
 export const getOne: ControllerAction = async (req, res) => {
