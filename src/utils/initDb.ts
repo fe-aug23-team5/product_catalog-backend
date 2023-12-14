@@ -7,6 +7,7 @@ const URI =
  
 export const sequelize = new Sequelize(process.env.DB_LINK ? process.env.DB_LINK : URI, {
   dialect: 'postgres',
+  protocol: 'postgres',
   dialectOptions: {ssl: true},
   models: [Phone, PhoneDetails],
   logging: console.log,
