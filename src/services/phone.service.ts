@@ -10,43 +10,53 @@ enum SortByType {
 
 interface PhonesQueryParams {
   sortBy?: SortByType;
-  page?: number;
-  perPage?: number | 'all';
+  page?: string;
+  perPage?: string | 'all';
   order?:"ASC"|"DESC";
 }
 
 export const findAll = async (queryParams: PhonesQueryParams) => {
-  const { sortBy, page = 1, perPage = DEFAULT_PER_PAGE, order = 'ASC' } = queryParams;
+  const { sortBy, page = '1', perPage = DEFAULT_PER_PAGE, order = 'ASC' } = queryParams;
 
+  let normalizedPage = 0;
+  if (page !== '0') {
+    normalizedPage = +page - 1;
+  }
+
+ try {
   switch (sortBy) {
     case 'name':
       return Phone.findAndCountAll({
-        offset: page * Number(perPage),
+        offset: normalizedPage * Number(perPage),
         limit: Number(perPage),
         order: [['name', order]],
       });
 
     case 'newest':
       return Phone.findAndCountAll({
-        offset: page * Number(perPage),
+        offset: normalizedPage * Number(perPage),
         limit: Number(perPage),
         order: [['year', order==='ASC'?'DESC':'ASC']],
       });
 
     case 'cheapest':
       return Phone.findAndCountAll({
-        offset: page * Number(perPage),
+        offset: normalizedPage * Number(perPage),
         limit: Number(perPage),
         order: [['price', order]],
       });
 
     default:
       return Phone.findAndCountAll({
-        offset: page * Number(perPage),
+        offset: normalizedPage * Number(perPage),
         limit: Number(perPage),
         order: [['name', order]],
       });
   }
+ } catch(e) {
+  console.error("Search Params Error", e);
+  return {count:0, rows:[]};
+ }
 };
 
 export const getById = async (id: string): Promise<PhoneDetails | null> =>
