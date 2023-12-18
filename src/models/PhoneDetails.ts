@@ -7,12 +7,12 @@ import {
   AllowNull
 } from 'sequelize-typescript';
 
-import { PhoneDetailsType } from '../types/PhoneDetailsType';
+import { DetailsType } from '../types/DetailsType';
 
 @Table({
   tableName: 'phone_details',
 })
-export class PhoneDetails extends Model<PhoneDetailsType> {
+export class PhoneDetails extends Model<DetailsType> {
   @PrimaryKey
   @AllowNull(false)
   @Column(DataType.STRING)

@@ -1,7 +1,6 @@
-export interface PhoneType {
-    id: string;
+export interface ProductType {
+    id: number;
     category: string;
-    phoneId: string;
     itemId: string;
     name: string;
     fullPrice: number;

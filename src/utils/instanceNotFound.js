@@ -1,6 +1,6 @@
 'use strict';
 
-const instanceNotFound = (res, entity) => {
+export const instanceNotFound = (res, entity) => {
   return res
     .status(404)
     .json({
@@ -8,4 +8,3 @@ const instanceNotFound = (res, entity) => {
     });
 };
 
-module.exports = { instanceNotFound };
