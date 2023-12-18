@@ -30,6 +30,9 @@ export const findAll = async (queryParams: PhonesQueryParams) => {
   switch (sortBy) {
     case 'name':
       return Phone.findAndCountAll({
+        where: {
+          name: { [Op.iRegexp ]: query },
+        },
         offset: normalizedPage * Number(perPage),
         limit: Number(perPage),
         order: [['name', order]],
@@ -37,6 +40,9 @@ export const findAll = async (queryParams: PhonesQueryParams) => {
 
     case 'newest':
       return Phone.findAndCountAll({
+        where: {
+          name: { [Op.iRegexp ]: query },
+        },
         offset: normalizedPage * Number(perPage),
         limit: Number(perPage),
         order: [['year', order==='ASC'?'DESC':'ASC']],
@@ -44,6 +50,9 @@ export const findAll = async (queryParams: PhonesQueryParams) => {
 
     case 'cheapest':
       return Phone.findAndCountAll({
+        where: {
+          name: { [Op.iRegexp ]: query },
+        },
         offset: normalizedPage * Number(perPage),
         limit: Number(perPage),
         order: [['price', order]],
