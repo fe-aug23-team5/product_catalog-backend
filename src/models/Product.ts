@@ -7,24 +7,25 @@ import {
   ForeignKey,
 } from 'sequelize-typescript';
 import { PhoneDetails } from './PhoneDetails';
-import { PhoneType } from '../types/PhoneType';
+import { ProductType } from '../types/ProductType';
+import { TabletDetails } from './TabletDetails';
+import { AccessoryDetails } from './AccessoryDetails';
 
 @Table({
-  tableName: 'phones',
+  tableName: 'products',
 })
 
-export class Phone extends Model<PhoneType> {
+export class Product extends Model<ProductType> {
     @PrimaryKey
-    @Column(DataType.STRING)
-    id!: string;
+    @Column(DataType.INTEGER)
+    id!: number;
 
     @Column(DataType.STRING)
     category!: string;
 
     @ForeignKey(() => PhoneDetails)
-    @Column(DataType.STRING)
-    phoneId!: string;
-
+    @ForeignKey(() => TabletDetails)
+    @ForeignKey(() => AccessoryDetails)
     @Column(DataType.STRING)
     itemId!: string;
 

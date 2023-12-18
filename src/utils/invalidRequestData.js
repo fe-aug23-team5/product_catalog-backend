@@ -1,6 +1,6 @@
 'use strict';
 
-const invalidRequestData = (res, field) => {
+export const invalidRequestData = (res, field) => {
   return res
     .status(400)
     .json({
@@ -8,4 +8,3 @@ const invalidRequestData = (res, field) => {
     });
 };
 
-module.exports = { invalidRequestData };

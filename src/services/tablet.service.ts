@@ -1,5 +1,5 @@
 import { Product } from '../models/Product';
-import { PhoneDetails } from '../models/PhoneDetails';
+import { TabletDetails } from '../models/TabletDetails';
 import { DEFAULT_PER_PAGE } from '../utils/constats';
 import { Op } from 'sequelize';
 import { QueryParams } from '../types/QueryParams';
@@ -23,7 +23,7 @@ export const findAll = async (queryParams: QueryParams) => {
       case 'name':
         return Product.findAndCountAll({
           where: {
-            category: { [Op.eq]: 'phones' },
+            category: { [Op.eq]: 'tablets' },
             name: { [Op.iRegexp]: query },
           },
           offset: normalizedPage * Number(perPage),
@@ -34,7 +34,7 @@ export const findAll = async (queryParams: QueryParams) => {
       case 'newest':
         return Product.findAndCountAll({
           where: {
-            category: { [Op.eq]: 'phones' },
+            category: { [Op.eq]: 'tablets' },
             name: { [Op.iRegexp]: query },
           },
           offset: normalizedPage * Number(perPage),
@@ -45,7 +45,7 @@ export const findAll = async (queryParams: QueryParams) => {
       case 'cheapest':
         return Product.findAndCountAll({
           where: {
-            category: { [Op.eq]: 'phones' },
+            category: { [Op.eq]: 'tablets' },
             name: { [Op.iRegexp]: query },
           },
           offset: normalizedPage * Number(perPage),
@@ -56,7 +56,7 @@ export const findAll = async (queryParams: QueryParams) => {
       default:
         return Product.findAndCountAll({
           where: {
-            category: { [Op.eq]: 'phones' },
+            category: { [Op.eq]: 'tablets' },
             name: { [Op.iRegexp]: query },
           },
           offset: normalizedPage * Number(perPage),
@@ -70,5 +70,8 @@ export const findAll = async (queryParams: QueryParams) => {
   }
 };
 
-export const getById = async (id: string): Promise<PhoneDetails | null> =>
-  PhoneDetails.findByPk(id);
+export const getById = async (id: string): Promise<TabletDetails | null> => {
+ console.log(id)
+ const result = await TabletDetails.findByPk(id);
+ return result;
+}

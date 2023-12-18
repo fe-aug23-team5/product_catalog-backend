@@ -1,25 +1,25 @@
-export interface PhoneDetailsType {
+export interface DetailsType {
     id: string;
     namespaceId: string;
     name: string;
     capacityAvailable: string[];
     capacity: string;
-    priceRegular: string;
-    priceDiscount: string;
+    priceRegular: number;
+    priceDiscount: number;
     colorsAvailable: string[];
     color: string;
     images: string[];
-    description: PhoneDescription[];
+    description: Description[];
     screen: string;
     resolution: string;
     processor: string;
     ram: string;
-    camera: string;
-    zoom: string;
+    camera?: string;
+    zoom?: string;
     cell: string[];
   };
   
-  interface PhoneDescription {
+  interface Description {
     title: string;
     text: string[];
   }

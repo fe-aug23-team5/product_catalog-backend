@@ -2,6 +2,9 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import { phoneRouter } from './routes/phone.routes';
+import { generalRouter } from './routes/general.routes';
+import { tabletRouter } from './routes/tablet.router';
+import { accessoryRouter } from './routes/accessory.routes';
 import { connect } from './utils/initDb';
 
 //PORT = 8000
@@ -19,7 +22,13 @@ const app = express()
 
 app.options('*', cors())
 
+app.use('/accessories', accessoryRouter);
+
+app.use('/tablets', tabletRouter);
+
 app.use('/phones', phoneRouter);
+
+app.use('/', generalRouter);
 
 app.listen(process.env.PORT, () => {
   console.log(`🚀🚀🚀 Server is running on http://localhost:${process.env.PORT} 🚀🚀🚀`)
