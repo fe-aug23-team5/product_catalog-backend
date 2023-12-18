@@ -16,7 +16,7 @@ export const sequelize = new Sequelize(
     dialect: 'postgres',
     protocol: 'postgres',
     dialectOptions: { ssl: true },
-    models: [Product, PhoneDetails],
+    models: [Product, PhoneDetails, TabletDetails, AccessoryDetails],
     logging: console.log,
     define: {
       timestamps: false,
