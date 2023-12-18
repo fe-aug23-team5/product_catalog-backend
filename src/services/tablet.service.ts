@@ -70,8 +70,5 @@ export const findAll = async (queryParams: QueryParams) => {
   }
 };
 
-export const getById = async (id: string): Promise<TabletDetails | null> => {
- console.log(id)
- const result = await TabletDetails.findByPk(id);
- return result;
-}
+export const getById = async (id: string): Promise<TabletDetails | null> =>
+  await TabletDetails.findByPk(id);
