@@ -1,6 +1,8 @@
 import { Phone } from '../models/Phone';
 import { PhoneDetails } from '../models/PhoneDetails';
 import { DEFAULT_PER_PAGE } from '../utils/constats';
+import { Op } from 'sequelize';
+
 
 enum SortByType {
   Newest = 'newest',
@@ -13,10 +15,11 @@ interface PhonesQueryParams {
   page?: string;
   perPage?: string | 'all';
   order?:"ASC"|"DESC";
+  query?:string;
 }
 
 export const findAll = async (queryParams: PhonesQueryParams) => {
-  const { sortBy, page = '1', perPage = DEFAULT_PER_PAGE, order = 'ASC' } = queryParams;
+  const { sortBy, page = '1', perPage = DEFAULT_PER_PAGE, order = 'ASC', query='' } = queryParams;
 
   let normalizedPage = 0;
   if (page !== '0') {
@@ -27,6 +30,9 @@ export const findAll = async (queryParams: PhonesQueryParams) => {
   switch (sortBy) {
     case 'name':
       return Phone.findAndCountAll({
+        where: {
+          name: { [Op.iRegexp ]: query },
+        },
         offset: normalizedPage * Number(perPage),
         limit: Number(perPage),
         order: [['name', order]],
@@ -34,6 +40,9 @@ export const findAll = async (queryParams: PhonesQueryParams) => {
 
     case 'newest':
       return Phone.findAndCountAll({
+        where: {
+          name: { [Op.iRegexp ]: query },
+        },
         offset: normalizedPage * Number(perPage),
         limit: Number(perPage),
         order: [['year', order==='ASC'?'DESC':'ASC']],
@@ -41,6 +50,9 @@ export const findAll = async (queryParams: PhonesQueryParams) => {
 
     case 'cheapest':
       return Phone.findAndCountAll({
+        where: {
+          name: { [Op.iRegexp ]: query },
+        },
         offset: normalizedPage * Number(perPage),
         limit: Number(perPage),
         order: [['price', order]],
@@ -48,6 +60,9 @@ export const findAll = async (queryParams: PhonesQueryParams) => {
 
     default:
       return Phone.findAndCountAll({
+        where: {
+          name: { [Op.iRegexp ]: query },
+        },
         offset: normalizedPage * Number(perPage),
         limit: Number(perPage),
         order: [['name', order]],
