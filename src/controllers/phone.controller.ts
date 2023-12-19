@@ -1,5 +1,7 @@
 import { ControllerAction } from '../types/ControllerAction';
 import * as phoneService from '../services/phone.service';
+import { invalidRequestData } from '../utils/invalidRequestData';
+import { instanceNotFound } from '../utils/instanceNotFound';
 
 export const getAll: ControllerAction = async (req, res) => {
   const { count: totalCount, rows: data } = await phoneService.findAll(
@@ -8,15 +10,27 @@ export const getAll: ControllerAction = async (req, res) => {
   res.send({ totalCount, data });
 };
 
-export const getOne: ControllerAction = async (req, res) => {
+export const getDetailedOne: ControllerAction = async (req, res) => {
   const { itemId } = req.params;
 
-  const product = await phoneService.getById(itemId);
+  const product = await phoneService.getDetailsById(itemId);
 
   if (!product) {
-    res.sendStatus(404);
+    return instanceNotFound(res, itemId)
+  }
+  
+  res.send(product);
+};
 
-    return;
+export const getOne: ControllerAction = async (req, res) => {
+  const { itemId } = req.params;
+  if (isNaN(Number(itemId))) {
+    return invalidRequestData(res, itemId);
+  }
+  const product = await phoneService.getById(Number(itemId));
+
+  if (!product) {
+    return instanceNotFound(res, itemId)
   }
   res.send(product);
 };
