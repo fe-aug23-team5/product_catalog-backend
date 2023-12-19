@@ -8,7 +8,8 @@
     "start": "ts-node ./src/server.ts",
     "dev": "nodemon ./src/server.ts",
     "db-init": "ts-node ./src/sync.ts",
-    "build": "npm i && ts-node ./src/sync.ts"
+    "build": "npm i && ts-node ./src/sync.ts",
+    "deploy": "npm i && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
   },
   "repository": {
     "type": "git",
@@ -33,12 +34,13 @@
     "sequelize-typescript": "^2.1.6"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-plugin-node": "^8.0.1",
-    "nodemon": "^3.0.2",
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/node": "^20.10.4",
+    "eslint": "^5.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "nodemon": "^3.0.2",
+    "sequelize-cli": "^6.6.2",
     "ts-node": "^10.9.1",
     "typescript": "^5.3.2"
   }
