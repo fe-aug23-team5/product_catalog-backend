@@ -74,11 +74,10 @@ export const getDetailsById = async (
   id: string
 ): Promise<PhoneDetails | null> => await PhoneDetails.findByPk(id);
 
-export const getById = async (id: number): Promise<Product | null> =>{
-  const product =  await Product.findByPk(id);
-  if(product?.category!=='phones') {
-    return null;
-  }
+export const getById = async (id: string): Promise<Product | null> =>{
+  const product =  await Product.findOne({ where: { itemId: id, category: 'phones' } });
+ 
   return product;
 }
+  
   
