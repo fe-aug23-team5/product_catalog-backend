@@ -18,16 +18,14 @@ export const getDetailedOne: ControllerAction = async (req, res) => {
   if (!product) {
     return instanceNotFound(res, itemId)
   }
-  
+
   res.send(product);
 };
 
 export const getOne: ControllerAction = async (req, res) => {
   const { itemId } = req.params;
-  if (isNaN(Number(itemId))) {
-    return invalidRequestData(res, itemId);
-  }
-  const product = await tabletService.getById(Number(itemId));
+
+  const product = await tabletService.getById(itemId);
 
   if (!product) {
     return instanceNotFound(res, itemId)

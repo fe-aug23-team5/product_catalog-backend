@@ -22,10 +22,8 @@ export const getDetailedOne: ControllerAction = async (req, res) => {
 
 export const getOne: ControllerAction = async (req, res) => {
   const { itemId } = req.params;
-  if (isNaN(Number(itemId))) {
-    return invalidRequestData(res, itemId);
-  }
-  const product = await accessoryService.getById(Number(itemId));
+
+  const product = await accessoryService.getById(itemId);
 
   if (!product) {
     return instanceNotFound(res, itemId)
