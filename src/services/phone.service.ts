@@ -70,5 +70,15 @@ export const findAll = async (queryParams: QueryParams) => {
   }
 };
 
-export const getById = async (id: string): Promise<PhoneDetails | null> =>
-  PhoneDetails.findByPk(id);
+export const getDetailsById = async (
+  id: string
+): Promise<PhoneDetails | null> => await PhoneDetails.findByPk(id);
+
+export const getById = async (id: number): Promise<Product | null> =>{
+  const product =  await Product.findByPk(id);
+  if(product?.category!=='phones') {
+    return null;
+  }
+  return product;
+}
+  

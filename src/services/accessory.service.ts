@@ -70,5 +70,15 @@ export const findAll = async (queryParams: QueryParams) => {
   }
 };
 
-export const getById = async (id: string): Promise<AccessoryDetails | null> =>
-  AccessoryDetails.findByPk(id);
+export const getDetailsById = async (
+  id: string
+): Promise<AccessoryDetails | null> => await AccessoryDetails.findByPk(id);
+
+export const getById = async (id: number): Promise<Product | null> =>{
+  const product =  await Product.findByPk(id);
+  if(product?.category!=='accessories') {
+    return null;
+  }
+  return product;
+}
+  
