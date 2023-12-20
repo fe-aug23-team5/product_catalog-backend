@@ -1,4 +1,4 @@
-# PRODUCT CATALOG DESCRIPTION
+# PRODUCT CATALOG API
 ## Technologies used
 - Node.js
 - Express.js
